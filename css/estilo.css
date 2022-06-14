@@ -9,6 +9,9 @@ body {
     flex-direction: column;
     background-color: #ffd3c8;
 }
+#grad {
+    background-image: linear-gradient(0deg, rgba(231,119,192,1) 0%, rgba(253,103,45,1) 100%);
+}
 header h1{
     color: #0f1e31;
     font-size: 2rem;
@@ -101,4 +104,9 @@ footer {
            grid-template-columns: 3fr 1fr ;
            grid-gap: 10px;
        }
+    }
+
+    .animate__heartBeat{
+        width: 150px;
+        border-radius: 4rem;
     }

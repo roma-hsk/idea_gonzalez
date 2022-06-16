@@ -1,112 +1,31 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    display: flex;
-    height: 300px;
-    flex-direction: column;
-    background-color: #ffd3c8;
-}
-#grad {
+div{
     background-image: linear-gradient(0deg, rgba(231,119,192,1) 0%, rgba(253,103,45,1) 100%);
 }
-header h1{
-    color: #0f1e31;
-    font-size: 2rem;
-    margin: 0.5rem;
-}
-.encabezado{
-    color: #0f1e31;
-    font-size: 2rem;
-}
-form{
-    margin-bottom: 0.5rem;
+
+.animate__heartBeat{
+    width: 100px;
+    border-radius: 4rem;
 }
 .estiloImagenes{
 
     border-radius: 1rem;
     margin: 1rem;
 }
+.titulos{
+    color: rgb(20, 20, 20);
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
 .reproductor{
     display: none;
 justify-content: center;
 }
 
- ul{
-    display: flex;
-    justify-content: space-evenly;
-}
- ul li {
-    list-style: none;
-    padding: 0.4rem;
-    border-radius: 1rem;
-    background-color: antiquewhite;
-    font-size: 1rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    
- }
-section{
-    text-align: center;
-    padding: 15px;
-    background-image: url(https://i.pinimg.com/originals/96/41/15/964115a93b585d527338b9a2dc974edf.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-form{
-     padding: 10px;
- }
-
- #grilla{
-     display: grid;
-     grid-template-areas:
-    "header"
-    "titulos"
-    "imagenes"
-    "footer";
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-}
-header{
-    grid-area: header;
-}
-section #titulos{
-    grid-area: titulos;
-}
-section #imagenes{
-    grid-area: imagenes;
-    
-}
-footer {
-    grid-area: footer;
-    text-align: center;
-    color: black;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 @media screen and (min-width: 600px) {
 
-        .reproductor{
-        display: block;
-        grid-area: reproductor;
-        }
-
-        #grilla{
-            grid-template-areas:
-           "header header"
-           "titulos reproductor"
-           "imagenes reproductor"
-           "footer footer";
-           grid-template-columns: 3fr 1fr ;
-           grid-gap: 10px;
-       }
+    .reproductor{
+    display: block;
+    grid-area: reproductor;
     }
-
-    .animate__heartBeat{
-        width: 150px;
-        border-radius: 4rem;
-    }
+}

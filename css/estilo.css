@@ -1,6 +1,13 @@
-div{
-    background-image: linear-gradient(0deg, rgba(231,119,192,1) 0%, rgba(253,103,45,1) 100%);
+body{
+    background: rgb(255,148,124);
+    background: radial-gradient(circle, rgba(255,148,124,1) 0%, rgba(255,244,187,1) 85%);
 }
+
+nav{
+    background: rgb(255,183,147);
+background: linear-gradient(90deg, rgba(255,183,147,1) 0%, rgba(255,105,46,1) 50%, rgba(255,250,145,1) 100%);
+}
+
 
 .animate__heartBeat{
     width: 100px;
@@ -21,6 +28,11 @@ div{
     display: none;
 justify-content: center;
 }
+.musicVideo{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+}
 
 @media screen and (min-width: 600px) {
 
@@ -29,3 +41,11 @@ justify-content: center;
     grid-area: reproductor;
     }
 }
+
+.contacto{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contactoFooter{
+    text-align: center;
+}
+

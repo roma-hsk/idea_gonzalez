@@ -1,0 +1,33 @@
+body {
+  background: #ff947c;
+  background: radial-gradient(circle, #ff947c 0%, #fff4bb 85%); }
+  body .animate__heartBeat {
+    width: 100px;
+    border-radius: 4rem; }
+  body .animate__heartBeat {
+    width: 100px;
+    border-radius: 4rem; }
+  body .titulos {
+    color: #141414;
+    font-size: 2rem;
+    margin: 0.5rem; }
+  body nav {
+    background: #ffb793;
+    background: linear-gradient(90deg, #ffb793 0%, #ff692e 50%, #fffa91 100%); }
+  body main .estiloImagenes {
+    border-radius: 1rem;
+    margin: 1rem; }
+  body main .reproductor {
+    display: none;
+    justify-content: center; }
+  body main .musicVideo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+  @media screen and (min-width: 600px) {
+    body main .reproductor {
+      display: block;
+      grid-area: reproductor; } }
+  body h5 {
+    text-align: center;
+    color: #141414; }

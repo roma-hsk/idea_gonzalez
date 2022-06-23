@@ -1,0 +1,58 @@
+//variables
+
+$color-textos: rgb(20, 20, 20);
+
+body{
+    background: rgb(255,148,124);
+    background: radial-gradient(circle, rgba(255,148,124,1) 0%, rgba(255,244,187,1) 85%);
+
+    .animate__heartBeat{
+        width: 100px;
+        border-radius: 4rem;
+    }
+
+    .animate__heartBeat{
+        width: 100px;
+        border-radius: 4rem;
+    }
+    
+    .titulos{
+        color: $color-textos;
+        font-size: 2rem;
+        margin: 0.5rem;
+    }
+    nav{
+        background: rgb(255,183,147);
+        background: linear-gradient(90deg, rgba(255,183,147,1) 0%, rgba(255,105,46,1) 50%, rgba(255,250,145,1) 100%);
+    }
+    main{
+    .estiloImagenes{
+        border-radius: 1rem;
+        margin: 1rem;
+    }
+    .reproductor{
+        display: none;
+    justify-content: center;
+    }
+    .musicVideo{
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-around;
+    }
+    
+    @media screen and (min-width: 600px) {
+        
+        .reproductor{
+        display: block;
+        grid-area: reproductor;
+        }
+    }
+}
+    h5{
+        text-align: center;
+        color: $color-textos;
+
+}
+
+
+}

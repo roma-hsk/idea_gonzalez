@@ -1,3 +1,12 @@
+.posicionImagenes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center; }
+
+body main .reproductor {
+  border-radius: 0.5rem; }
+
 body {
   background: #ff947c;
   background: radial-gradient(circle, #ff947c 0%, #fff4bb 85%); }
@@ -10,13 +19,19 @@ body {
   body .titulos {
     color: #141414;
     font-size: 2rem;
-    margin: 0.5rem; }
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center; }
   body nav {
     background: #ffb793;
     background: linear-gradient(90deg, #ffb793 0%, #ff692e 50%, #fffa91 100%); }
   body main .estiloImagenes {
     border-radius: 1rem;
-    margin: 1rem; }
+    margin: 1rem;
+    width: 300px;
+    height: 300px; }
   body main .reproductor {
     display: none;
     justify-content: center; }
@@ -31,3 +46,12 @@ body {
   body h5 {
     text-align: center;
     color: #141414; }
+
+.btn-phoebe {
+  border-color: black; }
+
+.btn-marilina {
+  border-color: white; }
+
+.btn-badBunny {
+  border-color: red; }

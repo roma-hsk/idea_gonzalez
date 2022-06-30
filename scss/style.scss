@@ -2,6 +2,24 @@
 
 $color-textos: rgb(20, 20, 20);
 
+@mixin flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.posicionImagenes{
+@include flex()
+}
+
+%reproductor {
+    border-radius: 0.5rem;
+}
+
+
+
 body{
     background: rgb(255,148,124);
     background: radial-gradient(circle, rgba(255,148,124,1) 0%, rgba(255,244,187,1) 85%);
@@ -20,6 +38,7 @@ body{
         color: $color-textos;
         font-size: 2rem;
         margin: 0.5rem;
+        @include flex()
     }
     nav{
         background: rgb(255,183,147);
@@ -29,10 +48,13 @@ body{
     .estiloImagenes{
         border-radius: 1rem;
         margin: 1rem;
+        width: 300px;
+        height: 300px;
     }
     .reproductor{
         display: none;
     justify-content: center;
+    @extend %reproductor;
     }
     .musicVideo{
         display: flex;
@@ -55,4 +77,16 @@ body{
 }
 
 
+}
+
+$bordeImagen: (
+    phoebe: black,
+    marilina: white,
+    badBunny: red
+);
+
+@each $borde, $color in $bordeImagen{
+    .btn-#{$borde}{
+        border-color: $color;
+    }
 }
